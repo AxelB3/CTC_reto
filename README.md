@@ -38,10 +38,25 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/deploym
 <------------- INSTALACION FRONTEND------------->
 
 1.- Instalar node version 18.16.0 o mayor
+
 2.- Ejecutar comando 'npm install' para instalar dependencias
+
 3.- Utilizar el comando 'npm run dev', esto creara un servidor en el puerto 5500 de manera local
 
 
+<------------- INSTALACION BACKEND------------->
 
+1.- Instalacion de XAMPP para utilizar php (ultima version)
 
+2.- Instalacion de la ultima version de composer.
 
+3.- Instalacion de postgresql version 14
+
+4.- Ya instalado XAMPP se agrego la extension pdo_pgs y la extension de pgs para utilizar postgres y establecer 
+conexion a la base de datos
+
+Craear base de datos con el nombre tasks y en el archivo de .env en las variables cambiar la contraseña y el usuario.
+
+Una vez creada la base de datos ejecutar el comando php artisan migrate 
+
+Ya ejecutado y con los modelos creados en y las tablas creadas en postgres ejecutar el comando php artisan db:seed para crear registros iniciales en la aplicacion.
